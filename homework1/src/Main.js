@@ -4,7 +4,6 @@ export const Main=()=>{
     return(
         <div className="">
             <div className="card" style={{"width": "18rem"}}>
-                <img src={Photo} className="card-img-top" alt="my photo"/>
                 <div className="card-body">
                     <p className="card-text">Hi, I’m Zhykhariev Anatolii
                         Hi, I’m ZhykharievAnatolii
