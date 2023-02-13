@@ -5,7 +5,7 @@ import {Nav} from "./Nav";
 export const App=()=>{
   return( <>
     <Header/>
-    <Main/>
     <Nav/>
+    <Main/>
 
   </>)}

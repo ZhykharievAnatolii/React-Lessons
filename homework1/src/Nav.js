@@ -13,9 +13,6 @@ export const Nav=()=>{
             <li className="nav-item">
                 <a href="tel:+30634726870" className="btn btn-primary m-md-4 bg-dark">call me or send a message</a>
             </li>
-            <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
-            </li>
         </ul>
         </div>
     )
