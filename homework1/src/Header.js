@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css'
 export const Header=()=>{
-    return(<nav className="navbar navbar-expand-lg bg-body-tertiary">
+    return(<nav className="navbar navbar-expand-lg bg-body-tertiary bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Zhykhariev Anatolii</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
