@@ -4,30 +4,69 @@ import React from "react";
 export class App extends React.Component {
   render() {
     return (
-        <Grid/>
+        <Bootstrap/>
     )
   }
 }
 
 class Header extends React.Component {
   render() {
-    return (<div className='grid-item grid-item-1'>This is the header block</div>)
+    return (<nav className="navbar navbar-expand-lg bg-body-tertiary bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">Zhykhariev Anatolii</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="https://github.com/ZhykharievAnatolii">Github page</a>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                My works
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="https://zhykharievanatolii.github.io/">Markup portfolio project</a></li>
+                <li><a className="dropdown-item" href="https://github.com/ZhykharievAnatolii/Fine-Client">Fine-Client App</a></li>
+                <li><a className="dropdown-item" href="https://github.com/ZhykharievAnatolii/reactWorks">React works</a></li>
+                <li><a className="dropdown-item" href="https://github.com/ZhykharievAnatolii/Client-Server-App">Client-Server App</a></li>
+                <li><a className="dropdown-item" href="https://github.com/ZhykharievAnatolii/ClockApplication">Clock Application</a></li>
+                <li><a className="dropdown-item" href="https://github.com/ZhykharievAnatolii/adaptiveproject">Markup adaptive project</a></li>
+                <li><a className="dropdown-item" href="https://github.com/ZhykharievAnatolii/chevronnavmenuproject">Chevron markup project</a></li>
+                <li><a className="dropdown-item" href="mailto:nekijt87@gmail.com">Whant to collaborate?</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>)
   }
 }
 
 class MainContainer extends React.Component {
   render() {
-    return (<div className='grid-item grid-item-2'>
-      <article className='text'>
-        To access object properties we can use both dot and square brackets options.
-        object.prop1.propOfProp1 or object[“prop1”][“propOfProp1”]
-        We can use a variable as a property name while using square brackets (not a text directly).
-        const button2 = document.getElementById('but2'),
-        div2 = document.getElementById('div1');
-        button2.addEventListener('click', function (event) \
-        ) document.addEventListener('keyup', function (event) )
-
-      </article>
+    return (<div className="">
+      <div className="card" style={{"width": "18rem"}}>
+        <div className="card-body">
+          <p className="card-text">
+            Hi, I’m ZhykharievAnatolii
+            I’m a Frontend developer
+            I’m currently learning JavaScript.
+            I like the chosen field of activity and I have experience in continuous learning.
+            I study every day, and I am happy to learn something new.
+            I'm a disciplined and neat person, I happily spend time learning something new.
+            My previous work from the very beginning organizes me for continuous development,
+            and I am able to quickly remember and use new knowledge in practice.
+          </p>
+        </div>
+      </div>
     </div>)
   }
 }
@@ -35,21 +74,25 @@ class MainContainer extends React.Component {
 class SideNav extends React.Component {
   render() {
     return (
-        <div className='grid-item grid-item-3'>
-          <div className='sidenav'>
-            <a href='#'>Link 1</a>
-            <a href='#'>Link 2</a>
-            <a href='#'>Link 3</a>
-            <a href='#'>Link 4</a>
-            <a href='#'>Link 5</a>
-            <a href='#'>Link 6</a>
-          </div>
+        <div className="">
+          <ul className="nav flex-column">
+            <li className="nav-item">
+              <p className="card-text">How to reach me</p>
+              <a href="https://github.com/ZhykharievAnatolii" className="btn btn-primary bg-dark">Link to my GitHub page</a>
+            </li>
+            <li className="nav-item">
+              <a href="mailto:nekijt87@gmail.com" className="btn btn-primary bg-dark">email me</a>
+            </li>
+            <li className="nav-item">
+              <a href="tel:+30634726870" className="btn btn-primary bg-dark">call me or send a message</a>
+            </li>
+          </ul>
         </div>
     )
   }
 }
 
-class Grid extends React.Component {
+class Bootstrap extends React.Component {
   render() {
     return (
         <div className='grid-container'>
