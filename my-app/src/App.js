@@ -50,7 +50,7 @@ class Header extends React.Component {
   }
 }
 
-class MainContainer extends React.Component {
+class Main extends React.Component {
   render() {
     return (<div className="">
       <div className="card" style={{"width": "18rem"}}>
@@ -71,7 +71,7 @@ class MainContainer extends React.Component {
   }
 }
 
-class SideNav extends React.Component {
+class Nav extends React.Component {
   render() {
     return (
         <div className="">
@@ -95,10 +95,10 @@ class SideNav extends React.Component {
 class Bootstrap extends React.Component {
   render() {
     return (
-        <div className='grid-container'>
+        <div className='container'>
           <Header/>
-          <MainContainer/>
-          <SideNav/>
+          <Main/>
+          <Nav/>
         </div>
     )
   }

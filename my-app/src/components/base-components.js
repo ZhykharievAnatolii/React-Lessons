@@ -41,7 +41,7 @@ class Header extends React.Component {
     }
 }
 
-class MainContainer extends React.Component {
+class Main extends React.Component {
     render() {
         return (  <div className="">
             <div className="card" style={{"width": "18rem"}}>
@@ -63,7 +63,7 @@ class MainContainer extends React.Component {
     }
 }
 
-class SideNav extends React.Component {
+class Nav extends React.Component {
     render() {
         return (   <div className="">
             <ul className="nav flex-column">
@@ -82,4 +82,4 @@ class SideNav extends React.Component {
     }
 }
 
-export {Header, SideNav, MainContainer}
+export {Header, Nav, Main}
