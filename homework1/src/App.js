@@ -4,11 +4,11 @@ import { Header, Nav, Main } from "./components/base-components";
 import { TodoApp } from "./components/noteApp/noteApp";
 export class App extends React.Component {
   render() {
-    return <Bootstrap />;
+    return <App />;
   }
 }
 
-class Bootstrap extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <>
