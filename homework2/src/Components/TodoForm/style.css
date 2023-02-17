@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  background: #fff;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form__input {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.form__button {
+  padding: 10px;
+}

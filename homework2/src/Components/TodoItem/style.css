@@ -1,0 +1,29 @@
+.todo-item {
+  display: flex;
+  background: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.todo-item__label {
+  display: flex;
+  flex-grow: 1;
+}
+
+.todo-item__desc {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.todo-item__desc--checked {
+  text-decoration: line-through;
+  color: rgb(186, 27, 27);
+}
+
+.del_btn {
+  background-color: rgb(243, 32, 32);
+  padding: 10px;
+}

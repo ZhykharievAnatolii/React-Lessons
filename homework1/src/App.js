@@ -3,7 +3,7 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Nav from "./Components/Nav/Nav";
-import { TodoApp } from "./Components/NotesApp/NotesApp";
+import TodoApp from "./Components/NotesApp/NotesApp";
 export class App extends React.Component {
   render() {
     return <App />;
