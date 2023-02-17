@@ -12,13 +12,12 @@ class App extends Component {
     };
   }
 
-  addTodo({ id, title, checked }) {
+  addTodo({ id, title}) {
     const { todoItems } = this.state;
     this.setState({
-      todoItems: [...todoItems, { id, title, checked }],
+      todoItems: [...todoItems, { id, title}],
     });
   }
-
   render() {
     return (
       <div className="container">
