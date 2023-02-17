@@ -1,11 +1,12 @@
 
 import { Component } from "react";
-import { v4 as uuidv4 } from "uuid";
-
 import "./style.css";
 
+const { v4: uuidv4 } = require('uuid');
+uuidv4();
+
 export class TodoForm extends Component {
-  handlerSubmit(event) {
+  submit(event) {
     event.preventDefault();
     const { addTodo } = this.props;
     addTodo({
@@ -18,7 +19,7 @@ export class TodoForm extends Component {
 
   render() {
     return (
-      <form className="form" onSubmit={this.handlerSubmit.bind(this)}>
+      <form className="form" onSubmit={this.submit.bind(this)}>
         <input className="form__input" type="text" placeholder="New todo" name="title" />
         <button className="form__button">Add</button>
       </form>
