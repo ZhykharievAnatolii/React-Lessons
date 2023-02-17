@@ -1,10 +1,10 @@
 .todo-item {
   display: flex;
-  background: antiquewhite;
-  padding: 10px;
-  border-radius: 10px;
+  background: aqua;
+  padding: 15px;
+  border-radius: 15px;
   border: 1px solid;
-  margin-top: 5px;
+  margin-top: 10px;
   align-items: center;
 }
 
@@ -19,11 +19,6 @@
 }
 
 .todo-item__desc--checked {
-  text-decoration: line-through;
-  color: rgb(186, 27, 27);
-}
-
-.del_btn {
-  background-color: rgb(243, 32, 32);
-  padding: 10px;
+  text-decoration: black;
+  color: blueviolet;
 }

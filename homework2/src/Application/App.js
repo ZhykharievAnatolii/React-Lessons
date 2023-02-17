@@ -1,3 +1,4 @@
+
 import { Component } from "react";
 import { TodoForm } from "../Components/TodoForm/TodoForm";
 import { TodoList } from "../Components/TodoList/TodoList";
@@ -18,24 +19,6 @@ class App extends Component {
     });
   }
 
-  checkedTodo(id) {
-    const { todoItems } = this.state;
-    this.setState({
-      todoItems: todoItems.map((todoItem) =>
-        todoItem.id === id
-          ? { ...todoItem, checked: !todoItem.checked }
-          : todoItem
-      ),
-    });
-  }
-
-  deleteTodo(id) {
-    const { todoItems } = this.state;
-    this.setState({
-      todoItems: todoItems.filter((todoItem) => todoItem.id !== id),
-    });
-  }
-
   render() {
     return (
       <div className="container">
@@ -44,8 +27,6 @@ class App extends Component {
         <h2>Todos:</h2>
         <TodoList
           todoItems={this.state.todoItems}
-          checkedTodo={this.checkedTodo.bind(this)}
-          deleteTodo={this.deleteTodo.bind(this)}
         />
       </div>
     );
@@ -53,3 +34,4 @@ class App extends Component {
 }
 
 export default App;
+

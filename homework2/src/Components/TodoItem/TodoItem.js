@@ -1,16 +1,11 @@
-// CORE
+
 import { Component } from "react";
-// STYLE
 import "./style.css";
 
 export class TodoItem extends Component {
   handlerChecked() {
     this.props.checkedTodo(this.props.id);
   }
-  handlerDelete() {
-    this.props.deleteTodo(this.props.id);
-  }
-
   render() {
     return (
       <li className="todo-item">
@@ -30,7 +25,6 @@ export class TodoItem extends Component {
             {this.props.title}
           </p>
         </label>
-        <button className="del_btn" onClick={this.handlerDelete.bind(this)}>Delete</button>
       </li>
     );
   }
