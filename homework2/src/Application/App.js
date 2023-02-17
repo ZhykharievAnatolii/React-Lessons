@@ -12,10 +12,21 @@ class App extends Component {
     };
   }
 
-  addTodo({ id, title}) {
+  addTodo({ id, title, checked }) {
     const { todoItems } = this.state;
     this.setState({
-      todoItems: [...todoItems, { id, title}],
+      todoItems: [...todoItems, { id, title, checked }],
+    });
+  }
+
+  checkedTodo(id) {
+    const { todoItems } = this.state;
+    this.setState({
+      todoItems: todoItems.map((todoItem) =>
+        todoItem.id === id
+          ? { ...todoItem, checked: !todoItem.checked }
+          : todoItem
+      ),
     });
   }
   render() {
