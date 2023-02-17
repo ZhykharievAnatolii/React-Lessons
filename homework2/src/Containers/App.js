@@ -1,9 +1,6 @@
-// CORE
 import { Component } from "react";
-// COMPONENTS
 import { TodoForm } from "../Components/TodoForm/TodoForm";
 import { TodoList } from "../Components/TodoList/TodoList";
-// STYLE
 import "./style.css";
 
 class App extends Component {
