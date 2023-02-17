@@ -1,7 +1,9 @@
 import "./App.css";
 import React from "react";
-import { Header, Nav, Main } from "./components/base-components";
-import { TodoApp } from "./components/noteApp/noteApp";
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
+import { Nav} from "./Components/Nav/Nav";
+import { TodoApp } from "./Components/noteApp/noteApp";
 export class App extends React.Component {
   render() {
     return <App />;
