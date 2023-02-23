@@ -1,0 +1,11 @@
+td, th {
+  padding: 3px;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+}
+
+.del-btn {
+  background-color: #ec4e4e;
+  min-width: 100%;
+}

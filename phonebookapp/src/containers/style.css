@@ -1,0 +1,30 @@
+h1 {
+  font-size: 3rem;
+  color: rgb(14, 69, 36);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  gap: 10px;
+  margin: auto;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+ 
+}
+
+.hidden-btn {
+  min-width: 150px;
+  min-height: 40px;
+  background-color: #73e4de;
+  margin-left: 600px;
+}
